@@ -1,5 +1,11 @@
 /**
  * item21: understand type widening
+ *
+ * Things to remember
+ * - understand how typescript infers a type from a constant by widening it
+ *
+ * - familiarize yourself with the ways you can affect this behavior
+ * - const, type-annotation, context, as const
  */
 
 // widening
@@ -19,7 +25,8 @@ const v21 = {
   x: 1, // type is number, not `1`
 };
 
-// as const
+// as const (narrowest possible for it)
 const v21Const = {
   xConst: 1, // type is `1`
 } as const;
+const tupleConst = [1, 2, 3] as const;
