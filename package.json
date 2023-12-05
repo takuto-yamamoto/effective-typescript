@@ -4,6 +4,7 @@
     "typescript": "^5.2.2"
   },
   "devDependencies": {
+    "@types/geojson": "^7946.0.13",
     "@types/lodash": "^4.14.202"
   }
 }
